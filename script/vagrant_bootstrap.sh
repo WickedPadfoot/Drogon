@@ -15,10 +15,10 @@ sudo apt-get install -y autoconf bison build-essential libssl-dev libyaml-dev li
 sudo apt-get install -y libsqlite3-dev git nodejs
 
 # Qt and xvfb-run for Capybara Webkit
-sudo apt-get install -y libqtwebkit-dev xvfb
+#sudo apt-get install -y libqtwebkit-dev xvfb
 
 # ImageMagick and Rmagick
-sudo apt-get install -y imagemagick libmagickwand-dev
+#sudo apt-get install -y imagemagick libmagickwand-dev
 
 # Postgres
 sudo apt-get install -y postgresql-9.3 postgresql-server-dev-9.3 postgresql-contrib-9.3
