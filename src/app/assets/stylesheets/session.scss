@@ -1,0 +1,49 @@
+.scroll {
+    font-size: 2em;
+    line-height: 1.8em;
+    background: url('/assets/bg-scroll.jpg') 0 20% no-repeat;
+}
+
+.scroll-login {
+    margin-top: 6em;
+}
+
+input {
+    background: transparent;
+    border-image: url("input-border.png") 2 0 10 0;
+    border-bottom: 6px;
+    padding: 6px 6px 0 6px;
+    line-height: 0.66em;
+}
+
+.dice {
+    text-decoration: none;
+    display: inline-block;
+
+    height: 75px;
+    padding-top: 30px;
+    line-height: 15px;
+
+    background-size: 75px 75px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &.dice-d20 {
+        background-image: url("d20.jpg");
+    }
+    &.dice-d12 {
+        background-image: url("d12.jpg");
+    }
+    &.dice-d10 {
+        background-image: url("d10.jpg");
+    }
+    &.dice-d8 {
+        background-image: url("d8.jpg");
+    }
+    &.dice-d6 {
+        background-image: url("d6.jpg");
+    }
+    &.dice-d4 {
+        background-image: url("d4.jpg");
+    }
+}
