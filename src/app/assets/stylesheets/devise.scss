@@ -1,3 +1,5 @@
+/* @import "mixins"; */
+
 .scroll {
     font-size: 2em;
     line-height: 1.8em;
@@ -17,33 +19,68 @@
 }
 
 .dice {
-    text-decoration: none;
+    position: relative;
     display: inline-block;
 
-    height: 75px;
-    padding-top: 30px;
-    line-height: 15px;
+    min-width: 150px;
 
-    background-size: 75px 75px;
-    background-position: center;
-    background-repeat: no-repeat;
+    color: #66c48e;
 
-    &.dice-d20 {
-        background-image: url("d20.png");
+    height: 80px;
+    line-height: 20px;
+
+    &:hover {            
+        color: #44ad71;
+        cursor: pointer;
+
+        .dice-bg {
+            opacity: 0.7;
+        }
     }
-    &.dice-d12 {
-        background-image: url("d12.png");
+
+    .dice-bg {
+        opacity: 0.6;
+        height: 100%; width: 100%;
+
+        background-size: 75px 75px;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        &.dice-d20 {
+            background-image: url("d20.png");
+        }
+        &.dice-d12 {
+            background-image: url("d12.png");
+        }
+        &.dice-d10 {
+            background-image: url("d10.png");
+        }
+        &.dice-d8 {
+            background-image: url("d8.png");
+        }
+        &.dice-d6 {
+            background-image: url("d6.png");
+        }
+        &.dice-d4 {
+            background-image: url("d4.png");
+        }
+    }  
+
+    .dice-content {
+        color: inherit;
+        position: absolute;
+        width: 100%;
+        top: 30px;
+        text-shadow: 0px 0px 2px #111, 0px 0px 7px rgba(30,30,30,0.3);
+        text-decoration: none;
+        text-align: center;
     }
-    &.dice-d10 {
-        background-image: url("d10.png");
+
+    .dice-content-2 {
+        top: 20px;
     }
-    &.dice-d8 {
-        background-image: url("d8.png");
-    }
-    &.dice-d6 {
-        background-image: url("d6.png");
-    }
-    &.dice-d4 {
-        background-image: url("d4.png");
+
+    .dice-content-3 {
+        top: 10px;
     }
 }
