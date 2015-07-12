@@ -8,10 +8,10 @@
     margin-top: 6em;
 }
 
-input {
+.input-text {
     background: transparent;
-    border-image: url("input-border.png") 2 0 10 0;
-    border-bottom: 6px;
+    border-image: url("input-border.png") 2 0 8 0 round;
+    border-bottom-width: 5px;
     padding: 6px 6px 0 6px;
     line-height: 0.66em;
 }
