@@ -1,5 +1,10 @@
 /* @import "mixins"; */
 
+@keyframes dice-tumble {
+    33% { transform: rotate(6deg); }
+    66% { transform: rotate(-6deg); }
+}
+
 .scroll {
     font-size: 2em;
     line-height: 1.8em;
@@ -34,7 +39,8 @@
         cursor: pointer;
 
         .dice-bg {
-            opacity: 0.7;
+            animation-name: dice-tumble;
+            animation-duration: 0.3s;
         }
     }
 
