@@ -1,7 +1,7 @@
 <h1 class="titleDevise">Welcome to you, stranger. Tell us who you are...</h1>
 
 <div class="scroll-login row">
-  <div class="col-md-6 col-md-offset-2">
+  <div class="form col-md-6 col-md-offset-2">
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <div class="field">
         <%= f.label :username, class:"subtitleDevise" %><br />
@@ -15,7 +15,10 @@
 
       <% if devise_mapping.rememberable? -%>
         <div class="field">
-          <%= f.check_box :remember_me%>
+          <div class="checkbox-round">
+            <%= f.check_box :remember_me %>
+            <label></label>
+          </div>
           <%= f.label :remember_me, class:"subtitleDevise" %>
         </div>
       <% end -%>
