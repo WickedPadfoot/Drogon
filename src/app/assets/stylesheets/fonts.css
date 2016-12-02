@@ -37,9 +37,6 @@
 
 }
 
-
-
-
 @font-face {
     font-family: 'honey_scriptsemibold';
     src: url('/assets/honeyscript/honeyscript-semibold-webfont.eot');
@@ -52,9 +49,6 @@
     font-style: normal;
 
 }
-
-
-
 
 @font-face {
     font-family: 'sunshine_in_my_soulregular';
@@ -69,9 +63,6 @@
 
 }
 
-
-
-
 @font-face {
     font-family: 'sweetly_brokenregular';
     src: url('/assets/sweetly_broken/sweetly_broken-webfont.eot');
@@ -83,4 +74,8 @@
     font-weight: normal;
     font-style: normal;
 
+}
+
+.script {
+    font-family: dragon_is_comingregular;
 }

@@ -2,6 +2,18 @@
 
 <% if player_signed_in? %>
   <li>
-  <%= link_to('Logout', destroy_player_session_path, :method => :delete) %>        
+    <%= link_to('Logout', destroy_player_session_path, :method => :delete) %>        
   </li>
 <%end%>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="700" height="400"> 
+  <!-- add title for accessibility -->
+  <title>Applying a patterned background to text in SVG</title> --&gt;
+  <!-- SOurce: http://lea.verou.me/2012/05/text-masking-the-standards-way/ -->
+  <defs>
+    <pattern id="filler" patternUnits="userSpaceOnUse" width="741" height="600">
+      <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ink_1_sm.jpg" width="741" height="600" preserveAspectRatio="none"></image>
+    </pattern>
+  </defs>
+  <text class="script" x="100" y="70%" font-size="200" fill="url(#filler)">Lorem ipsum dolor sit amet</text>
+</svg>
