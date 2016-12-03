@@ -1,0 +1,2 @@
+class CampaignCharactersController < ApplicationController
+end
