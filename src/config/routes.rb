@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :characters
   devise_for :players
   get 'accueil/index'
 
