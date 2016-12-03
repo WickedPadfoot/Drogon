@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
+
   resources :characters
+  resources :campaign_characters
+  resources :campaign_users
+  resources :campaigns
+  resources :users
+  resources :journal_entries
+
   devise_for :players
   get 'accueil/index'
 
