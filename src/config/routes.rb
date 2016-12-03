@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :fonts
   resources :characters
   resources :campaign_characters
   resources :campaign_users

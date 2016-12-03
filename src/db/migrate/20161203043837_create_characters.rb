@@ -4,8 +4,10 @@ class CreateCharacters < ActiveRecord::Migration
 
       t.timestamps null: false
       t.string   :name
+      t.string   :alignement
     end
 
     add_foreign_key :characters, :users
+    add_foreign_key :characters, :fonts
   end
 end
