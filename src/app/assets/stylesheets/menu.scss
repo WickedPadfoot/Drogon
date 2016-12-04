@@ -1,0 +1,38 @@
+/* palette */
+
+$menu-surface-color: #6c6c6c;
+$menu-item-height: 40px;
+
+.menu {
+    background-color: $menu-surface-color;
+    
+    .menu__top-icon {
+	max-height: 200px;
+	margin-bottom: 40px;
+	padding: 1em;
+    }
+
+    .menu__items {
+	padding: 0;
+	margin-left: 0;
+    }
+
+    .menu__item {
+	display: block;
+	text-align: center;
+	list-style: none;
+	line-height: 40px;
+	font-size: 2.66em;
+	padding: 0.33em 0;
+
+	transition: 150ms background-color ease;
+
+	&:hover {
+	    cursor: pointer;
+	    background-color: rgba(255,255,255,0.2);
+	}
+    }
+}
+
+
+

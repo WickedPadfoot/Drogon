@@ -1,0 +1,64 @@
+$footer-height: 1.5rem;
+
+html {
+  /* make sure we use up the whole viewport */
+  width: 100%;
+  min-height: 100vh;
+  /* for debugging, a red background lets us see any seams */
+  background-color: red;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+main {
+  background-color: skyblue;
+  min-height: calc(100vh - #{$footer-height});
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 0.8em;
+  line-height: $footer-height;
+
+  .links {
+    position: relative;
+
+    a:link { color: white }
+    a:visited { color: white }
+    a:active { color: white }
+  }
+}
+
+.errors {
+  position: fixed;
+  top: 1em;
+  right: 1em;
+
+  width: 20%;
+}
+
+.error__explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}

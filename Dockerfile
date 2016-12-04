@@ -1,9 +1,12 @@
 FROM ruby:2.3
 
-RUN apt-get update \
-      && apt-get install -y --no-install-recommends postgresql-client \
-      && apt-get install -y nodejs \
+RUN curl -sL https://deb.nodesource.com/setup_7.x | bash -
+RUN apt-get install -y --no-install-recommends
+      postgresql-client \
+      nodejs \
       && rm -rf /var/lib/apt/lists/*
+
+RUN npm install -g bower
 
 WORKDIR /usr/app/src
 COPY src/Gemfile* ./

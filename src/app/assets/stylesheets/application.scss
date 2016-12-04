@@ -10,8 +10,14 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  */
-@import "bootstrap-sprockets";
-@import "bootstrap";
-@import "fonts";
+
+/* 
+ *= require normalize-css/normalize.css
+ *= require fonts.css
+ */
 
 @import "devise";
+@import "reflex/scss/reflex";
+@import "scaffolds";
+
+@import "menu";

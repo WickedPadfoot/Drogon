@@ -7,11 +7,35 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <section role="errors" class="errors">
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+  </section>
 
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+  <main role="app" class="app script script--honey script--light grid">
+    <section role="nav" class="menu grid__col-xs-3 grid__col--bleed">
+      <%= image_tag 'menu-top-icon.png', class: 'menu__top-icon grid__cell-img' %>
 
-<%= yield %>
-
+      <nav class="">
+        <ul class="menu__items">
+          <li class="menu__item"><%= link_to 'Profile', edit_user_registration_path(current_user) %></li>
+          <li class="menu__item"><%= link_to 'Settings', '' %></li>
+          <li class="menu__item"><%= link_to 'Add character', new_character_path %></li>
+          <li class="menu__item"><%= link_to 'Add campaign', new_campaign_path %></li>
+        </ul>
+      </nav>
+    </section>
+    <section role="content" class="grid__col-xs-9">
+      <%= yield %>
+    </section>
+  </main>
+  <footer>
+    Made with &#10084; by some fellow adventurers &mdash;
+    <span class="links">
+      <%= link_to 'github', 'https://github.com/ostiGaming/drogon' %>
+      &nbsp;
+      <%= link_to 'waffle', 'https://waffle.io/ostiGaming/drogon' %>
+    </span>
+  </footer>
 </body>
 </html>

@@ -1,3 +1,4 @@
+# coding: utf-8
 source 'https://rubygems.org'
 
 
@@ -25,6 +26,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.3.4.1'
 # cossin pour le login. pas besoin de gérer ca ya know
 gem 'devise', '~> 3.5.1'
+# front-end deps management
+gem "bower-rails", "~> 0.11.0"
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

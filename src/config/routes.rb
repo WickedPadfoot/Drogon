@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
 
+  resources :campaigns
+  resources :journal_entries
+  resources :characters
+  resources :campaigns
   resources :fonts
   resources :characters
-  resources :campaign_characters
-  resources :campaign_users
   resources :campaigns
   resources :journal_entries
 
