@@ -1,37 +1,40 @@
 /* palette */
 
-$menu-surface-color: #6c6c6c;
+$menu-surface-color: rgba(100,100,100,1);
 $menu-item-height: 40px;
 
 .menu {
-    background-color: $menu-surface-color;
-    
-    .menu__top-icon {
-	max-height: 200px;
-	margin-bottom: 40px;
-	padding: 1em;
+  background-color: $menu-surface-color;
+  
+  .menu__top-icon {
+    max-height: 200px;
+    margin-bottom: 40px;
+    padding: 1em;
+  }
+
+  .menu__items {
+    padding: 0;
+    margin-left: 0;
+  }
+
+  .menu__item {
+    display: block;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    line-height: 40px;
+    padding: 0.33em 0;
+    color: inherit;
+
+    transition: 150ms background-color ease;
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(255,255,255,0.2);
     }
 
-    .menu__items {
-	padding: 0;
-	margin-left: 0;
-    }
-
-    .menu__item {
-	display: block;
-	text-align: center;
-	list-style: none;
-	line-height: 40px;
-	font-size: 2.66em;
-	padding: 0.33em 0;
-
-	transition: 150ms background-color ease;
-
-	&:hover {
-	    cursor: pointer;
-	    background-color: rgba(255,255,255,0.2);
-	}
-    }
+    &:link, &:visited, &:active { color: inherit; }
+  }
 }
 
 

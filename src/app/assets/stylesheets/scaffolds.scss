@@ -3,17 +3,45 @@ $footer-height: 1.5rem;
 html {
   /* make sure we use up the whole viewport */
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   /* for debugging, a red background lets us see any seams */
-  background-color: red;
+  // background-color: red;
 }
+
 body {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
 }
+
 main {
-  background-color: skyblue;
-  min-height: calc(100vh - #{$footer-height});
+  // background-color: skyblue;
+  height: calc(100vh - #{$footer-height});
+}
+
+a {
+  color: inherit;
+
+  &:hover { opacity: 0.9; }
+}
+
+.app {
+  background: image-url('home-wp.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.app__content {
+  overflow-y: auto;
+  color: whitesmoke;
+
+  h1 { text-align: center; }
+
+  .panel {
+    border-radius: 5px;
+    padding: 2rem;
+
+    background: rgba(200, 200, 200, 0.3);
+    color: black;
+  }
 }
 
 footer {
@@ -36,7 +64,6 @@ footer {
   position: fixed;
   top: 1em;
   right: 1em;
-
   width: 20%;
 }
 

@@ -1,4 +1,5 @@
 class AccueilController < ApplicationController
-  def index
+  def landing
+    render :index
   end
 end

@@ -10,7 +10,6 @@ Rails.application.routes.draw do
   resources :journal_entries
 
   devise_for :users
-  get 'accueil/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -66,5 +65,5 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-  root 'accueil#index'
+  root 'accueil#landing'
 end

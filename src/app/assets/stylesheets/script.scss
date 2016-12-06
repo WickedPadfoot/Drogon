@@ -1,0 +1,18 @@
+/*
+ *= require fonts.css
+ */
+
+.script.script--dragon_is_coming { font-family: 'dragon_is_coming'; }
+.script.script--notera { font-family: 'notera'; }
+.script.script--sunshine_in_my_soul { font-family: 'sunshine_in_my_soul'; }
+.script.script--sweetly_broken { font-family: 'sweetly_broken'; }
+
+// todo: turn this into a macro
+.script.script--honey {
+    font-family: 'honey_script';
+    font-size: 2.66em;
+
+    h1, h2, h3, h4, h5, h6 { margin: #{(0.67/2.66)}em 0; }
+    p { margin: #{(1/2.66)}em 0; }
+}
+

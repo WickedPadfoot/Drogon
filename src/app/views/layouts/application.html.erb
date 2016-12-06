@@ -13,19 +13,19 @@
   </section>
 
   <main role="app" class="app script script--honey script--light grid">
-    <section role="nav" class="menu grid__col-xs-3 grid__col--bleed">
+    <section role="nav" class="menu grid__col-xs-3 grid__col-lg-2 grid__col--bleed">
       <%= image_tag 'menu-top-icon.png', class: 'menu__top-icon grid__cell-img' %>
 
       <nav class="">
         <ul class="menu__items">
-          <li class="menu__item"><%= link_to 'Profile', edit_user_registration_path(current_user) %></li>
-          <li class="menu__item"><%= link_to 'Settings', '' %></li>
-          <li class="menu__item"><%= link_to 'Add character', new_character_path %></li>
-          <li class="menu__item"><%= link_to 'Add campaign', new_campaign_path %></li>
+          <li><%= link_to 'Profile', edit_user_registration_path(current_user), class: 'menu__item' %></li>
+          <li><%= link_to 'Settings', '', class: 'menu__item' %></li>
+          <li><%= link_to 'Add character', new_character_path, class: 'menu__item' %></li>
+          <li><%= link_to 'Add campaign', new_campaign_path, class: 'menu__item' %></li>
         </ul>
       </nav>
     </section>
-    <section role="content" class="grid__col-xs-9">
+    <section role="content" class="app__content grid__col-xs-9 grid__col-lg-10">
       <%= yield %>
     </section>
   </main>
