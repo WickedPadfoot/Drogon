@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161203130308) do
+ActiveRecord::Schema.define(version: 20170102194010) do
 
   create_table "campaign_characters", force: :cascade do |t|
     t.boolean  "statusChar"
@@ -37,10 +37,14 @@ ActiveRecord::Schema.define(version: 20161203130308) do
   end
 
   create_table "characters", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
     t.string   "name"
     t.string   "alignement"
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
   end
 
   create_table "fonts", force: :cascade do |t|
