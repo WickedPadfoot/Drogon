@@ -3,7 +3,7 @@ class CreateCampaigns < ActiveRecord::Migration
     create_table :campaigns do |t|
 
       t.string :name
-      t.string :description
+      t.text :description
       t.boolean :status
       t.timestamps null: false
     end
