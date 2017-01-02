@@ -1,17 +1,7 @@
-<%= form_for(@character) do |f| %>
-  <% if @character.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@character.errors.count, "error") %> prohibited this character from being saved:</h2>
-
-      <ul>
-      <% @character.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
+ <%= semantic_form_for @character do |f| %>
+    <%= f.inputs do %>
+      <%= f.input :name %>
+      <%= f.input :alignement,  :as => :select,      :collection => Character::ALIGNMENTS %>
+    <% end %>
+    <%= f.actions %>
   <% end %>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>

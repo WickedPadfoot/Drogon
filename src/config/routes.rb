@@ -3,11 +3,7 @@ Rails.application.routes.draw do
   resources :campaigns
   resources :journal_entries
   resources :characters
-  resources :campaigns
   resources :fonts
-  resources :characters
-  resources :campaigns
-  resources :journal_entries
 
   devise_for :users
 

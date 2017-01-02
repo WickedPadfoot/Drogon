@@ -29,6 +29,8 @@ gem 'devise', '~> 3.5.1'
 # front-end deps management
 gem "bower-rails", "~> 0.11.0"
 
+gem 'formtastic', '~> 3.0'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
