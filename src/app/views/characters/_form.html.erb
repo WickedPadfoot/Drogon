@@ -2,6 +2,8 @@
     <%= f.inputs do %>
       <%= f.input :name %>
       <%= f.input :alignement,  :as => :select,      :collection => Character::ALIGNMENTS %>
+      <%= image_tag @character.avatar(:medium) %>
+      <%= f.input :avatar,  :as => :file %>
     <% end %>
     <%= f.actions %>
   <% end %>
